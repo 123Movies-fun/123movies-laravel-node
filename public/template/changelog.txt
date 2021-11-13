@@ -1,0 +1,133 @@
+The Project 1.3, 2016-21-08
+----------------------
+
+Important Notice: Update your existing website only if you want to use the new pages and features. Before the update, please backup all your files and your website.
+
+- Added sass support
+- Added index-restaurant-2.html (Restaurant 2 Home page)
+- Added index-landing-2.html (Landing page 2)
+- Added index-corporate-5.html (Corporate 5 Home - Law Firm Page)
+- Added index-blog-2.html (Blog 2 Home page)
+- Added shop-product-2.html (Shop Product page 2)
+- Added google reCAPTCHA support to contact forms
+- Added 8 announcement pages components-announcement-*.html (8 variations)
+- Added components-separators.html page (2 new separators added)
+- Added new typography scheme (with Lato and Roboto Slab fonts, see index-restaurant-2.html). Important: If you are planing to update your current site, please read Typography section in documentation.
+- Added new feature: images slider with navigation thumbs (see shop-product-2.html)
+- Fixed scroll spy issue at index-resume.html page
+- Fixed conditional HTML comments in all HTML files
+- Fixed slider's caption issue in index-logistics.html home page
+- Improved email-sender.php
+- Updated Slider Revolution to 5.2.6
+- Updated FontAwesome to 4.6.3
+- Updated Bootstrap to 3.3.7
+
+Affected Files/Folders:
+
+- bootstrap folder
+- css/skins folder
+- css/style.css file
+- fonts/font-awesome folder
+- images folder (new image placeholders added)
+- js/template.js file
+- less folder
+- added new plugin fullpage to plugins folder
+- php folder
+- plugins folder
+- all HTML files
+
+The Project 1.2, 2016-04-04
+----------------------
+
+Important Notice: Update your existing website only if you want to use the new pages and features. Before the update, please backup all your files and your website.
+
+- Added index-gym.html (Gym Home Page)
+- Added index-resume.html (Resume Home Page)
+- Added index-corporate-4.html (Corporate 4 Home Page)
+- Added index-agency.html (Agency Home Page)
+- Added index-logistics.html (Logistics Home Page)
+- Added features-headers-gradient-dark.html (New Header)
+- Added features-headers-gradient-light.html (New Header)
+- Added features-headers-sticky-2.html (New Sticky Header version)
+- Added features-footers-full-width.html#footer (New footer)
+- Added features-footers-contact-form-2.html#footer (New footer)
+- Updated features-sliders-fullscreen.html (Slider Revolution 5 version)
+- Updated features-sliders-fullwidth.html (Slider Revolution 5 version)
+- Updated features-sliders-fullwidth-big-height.html (Slider Revolution 5 version)
+- Updated features-sliders-boxedwidth-light.html (Slider Revolution 5 version)
+- Updated features-sliders-boxedwidth-dark.html (Slider Revolution 5 version)
+- Updated features-sliders-boxedwidth-default.html (Slider Revolution 5 version)
+- Updated features-sliders-video-background.html (Slider Revolution 5 version)
+- Updated features-sliders-text-rotator.html (Slider Revolution 5 version)
+- Added new feature full page
+- Added new component button size "XL"
+- Added header dropdowns @mobile widths
+- Fixed text-rotator align issue
+- Updated Bootstrap to 3.3.6
+- Updated FontAwesome to 4.5
+- Updated Slider Revolution to version 5
+- Updated jQuery to v1.12.2
+- Updated Charts.js to v1.1.0
+- Updated Isotope to v2.2.2
+- Updated Magnific popup to v1.1.0
+- Updated Morphext to v2.4.4
+- Updated Vide to v0.5.0
+- Updated Waypoints to 4.0.0
+
+Affected Files/Folders:
+
+- bootstrap folder
+- css/skins folder
+- css/style.css file
+- fonts/font-awesome folder
+- images folder (new image placeholders added)
+- js/template.js file
+- less folder
+- added new plugin fullpage to plugins folder
+- plugins folder
+
+The Project 1.1, 2015-10-10
+----------------------
+
+Important Notice: Update your existing website only if you want to use the new pages and features. You can use HTML Email templates without updating your existing website. Before the update, please backup all your files and your website.
+
+- Added index-beauty.html (Beauty Center Home Page)
+- Added index-blog.html (Blog Home Page)
+- Added index-construction.html (Construction Home Page)
+- Added index-education.html (Education Home Page)
+- Added index-hotel.html (Hotel Home Page)
+- Added email_template_blue.html (HTML email template)
+- Added email_template_brown.html (HTML email template)
+- Added email_template_cool_green.html (HTML email template)
+- Added email_template_dark_cyan.html (HTML email template)
+- Added email_template_dark_red.html (HTML email template)
+- Added email_template_gold.html (HTML email template)
+- Added email_template_gray.html (HTML email template)
+- Added email_template_green.html (HTML email template)
+- Added email_template_light_blue.html (HTML email template)
+- Added email_template_orange.html (HTML email template)
+- Added email_template_pink.html (HTML email template)
+- Added email_template_purple.html (HTML email template)
+- Added email_template_red.html (HTML email template)
+- Added email_template_vivid_red.html (HTML email template)
+- Added features-footers-links.html (New Footer option)
+- Added components-page-loaders.html (New Feature)
+- Added components-page-loaders-2.html (New Feature)
+- Added components-page-loaders-3.html (New Feature)
+- Added components-page-loaders-4.html (New Feature)
+- Added components-page-loaders-5.html (New Feature)
+- Added components-page-loaders-6.html (New Feature)
+- Enabled animations to touch devices
+- Updated bootstrap to 3.3.5
+- Updated fontawesome to 4.4
+
+Affected Files/Folders:
+
+- bootstrap folder
+- css/skins folder
+- css/style.css file
+- fonts/font-awesome folder
+- images folder (55 new image placeholders added)
+- js/template.js file
+- less folder
+- added new plugin pace to plugins folder

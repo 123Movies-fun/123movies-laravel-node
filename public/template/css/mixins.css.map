@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "mixins.css",
+	"sources": [
+		"../sass/mixins.scss"
+	],
+	"mappings": "",
+	"names": []
+}

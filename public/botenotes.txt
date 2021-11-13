@@ -1,0 +1,59 @@
+Yandex To-Do:
+	1 hour - Upload Accounts information to MainBot database
+	[DONE] 1 hour - Setup API for CloudBot to get a free yandex account from MainBot
+	2 hours - Setup CloudBot API for submitting "New Client" to https://oauth.yandex.com/client/new w/ each account
+				- Needs to submit data to MainBot for storage
+	1 hour - Setup CloudBot API for obtaining access_token (using Curl below)
+				- authoriztion API: https://oauth.yandex.ru/authorize?response_type=code&client_id=<application_ID>
+	- Setup API for downloading from Google (using curl below) [DONE]
+	- Setup Yandex Disk API on CloudBot [Partially DONE]
+		- Can list directories & files [DONE]
+		- Can upload files [DONE]
+		0.5hr - NEED to add functionality for new access_token API after expire
+	- Setup yandex download link API w/ player on CloudBot [Partially DONE]
+		- Check player, streaming works
+		0.5hr - Needs caching on MainBot
+	- Setup Yandex publish API function [DONE]
+	0.5hr - Need to scan Drive ID database and remove invalid items (remember when it was failing for a bit)
+	
+	[Done] 2 hrs - CDN API on CloudBot for images.
+	
+	
+	Yandex Player API url:
+	https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key=https://yadi.sk/i/NcXgJtEm3K4fa4
+
+	
+	YANDEX-ACCESS-TOKEN CURL:
+	curl "https://oauth.yandex.ru/token" -H "Host: oauth.yandex.ru" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" -H "Accept: */*" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Pragma: no-cache" -H "Cache-Control: no-cache" -H "Content-Length: 132" -H "Connection: keep-alive"
+	
+	
+	
+	Google Drive Confirmation Cookie
+	curl -i "https://drive.google.com/uc?export=download&id=0BzCYGLWZkvqZck9GUVNQb1dpN2s" -H "Host: drive.google.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Connection: keep-alive" -H "Upgrade-Insecure-Requests: 1" -H "Cache-Control: max-age=0"
+	
+	
+	Google Drive download confirmation Curl (to get download url)
+	curl -i "https://drive.google.com/uc?export=download&confirm=nYub&id=0BzCYGLWZkvqZck9GUVNQb1dpN2s" -H "Host: drive.google.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Referer: https://drive.google.com/uc?export=download&id=0BzCYGLWZkvqZck9GUVNQb1dpN2s" -H "Cookie: download_warning_11251742277916284715_0BzCYGLWZkvqZck9GUVNQb1dpN2s=nYub; NID=105=ONTGL6HceDVrrBtSYnQrzJA048MN3YRDMZ6hvaUx28yeKjaaQMfgQgoCdLM1jPrRXeonnuRWlOoQbrHeGiiKJ07fwF7KqbWqVewtzXWg5FDjY1QHYe0qAwNYcyx_5WKQoEmJLfK7MTnexCJHTXTl_qrrOutpxXx48a5v9SsnRBx_BY9FgF3TqsMevg4TjVnbuVObknSgYbTybtX6k1QFSQdBKtxGhRMzXnpphKriWi0zHmZDG77zlT9QoK-Dy4RFd0L1sak1E76xidzCViee-oBhI6LF08NnG_OBu0VE33ZMsWhyhw; OGPC=5061451-25:5061821-25:873035776-30:770863104-1:861862912-1:; SID=ygRbV7TDskZk-8RddE3O7GhQGn6nhTGYCh6zRS3527SUthPeHCAsfV3S1o1yNBZ3MPrdRg.; HSID=A2WaheAuoKEE3Mmtl; SSID=ApTt_CPzpf7YOsYfj; APISID=bYXtD-Y9IXLCqeyE/ABmX9OwC7Edrkkphd; SAPISID=5L7AXAz4XY3hI31Q/AUsxzjlxUDTluOBxX; S=billing-ui-v3=veIH1VANB04GclO3JmzyS2DADBf9MFTR:billing-ui-v3-efe=veIH1VANB04GclO3JmzyS2DADBf9MFTR:explorer=AXF6IndZVMCATCB8NlylmQ-p5Tbx6LK7; DRIVE_STREAM=8vh5-COnfzI; S=billing-ui-v3=veIH1VANB04GclO3JmzyS2DADBf9MFTR:billing-ui-v3-efe=veIH1VANB04GclO3JmzyS2DADBf9MFTR" -H "Connection: keep-alive" -H "Upgrade-Insecure-Requests: 1"
+	
+	download mp4 curl: "https://doc-0o-20-docs.googleusercontent.com/docs/securesc/rkperbgan6tcksgqu4kifh6r8sp2f4ib/3bnvob7u9ngreo6c0cjh1cmebg54l0hj/1497312000000/01525958108307638182/11251742277916284715/0BzCYGLWZkvqZck9GUVNQb1dpN2s?e=download" --2.0 -H "Host: doc-0o-20-docs.googleusercontent.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Referer: https://drive.google.com/uc?export=download&id=0BzCYGLWZkvqZck9GUVNQb1dpN2s" -H "Cookie: AUTH_mta69b4qdiim4bjmr5thak1favq63ijg=11251742277916284715|1497290400000|5oges6qu4654b7o3dnl4n68e2egdq1ek; NID=104=fpirAXi6sdQZtUKMRi5cVp3GNKf42J1VjW6QgkhTw0J_x0qSWKzi5UPNYUq2Jwm_vdhNe0LrONjtT_k0FUJfuMdGDdnwfgIM1DRX9QnOypOVh6EQ_1irOoOFW9G7_QG9; _octo=GH1.1.1677634598.1497307544; _ga=GA1.2.1114815469.1497307544" -H "Connection: keep-alive" -H "Upgrade-Insecure-Requests: 1"
+	
+	
+	
+	
+
+	
+	
+	
+	
+	Yandex HTML login curl
+	curl "https://passport.yandex.com/auth?retpath=https"%"3A"%"2F"%"2Foauth.yandex.com"%"2Fclient"%"2Fnew" -H "Host: passport.yandex.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Referer: https://passport.yandex.com/auth?retpath=https"%"3A"%"2F"%"2Foauth.yandex.com"%"2Fclient"%"2Fnew" -H "Content-Type: application/x-www-form-urlencoded" -H "Connection: keep-alive" -H "Upgrade-Insecure-Requests: 1" --data "login=riicesvarin1977"%"40yandex.com&passwd=PyW7yws1G7&retpath=https"%"3A"%"2F"%"2Foauth.yandex.com"%"2Fclient"%"2Fnew"
+	
+	
+	Yandex Phone Confirmation API:
+	
+	curl "https://passport.yandex.com/auth/challenges?track_id=d4898cd0b13a17faf65438e4d939e078cf" -H "Host: passport.yandex.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Referer: https://passport.yandex.com/auth/challenges?track_id=d4898cd0b13a17faf65438e4d939e078cf" -H "Content-Type: application/x-www-form-urlencoded" -H "Cookie: yandexuid=1763539811497206125; yp=1812913307.multib.1#1497916137.szm.1:1920x1080:1920x947#1499902335.ygu.1; L=ZA59Un9TBAhdZkkDQwZcV1tRUgJfdW9jMz1VQyU4FCwHOVVcWnF+.1497553307.13152.363495.9c24e3a8caf47ab546c47137d97e2d34; lah=XidFY1vK2KScV2i56cClYU1pYCFmREekrrPRNk_KxMK_VRhs.1497553307.13152.1.b95f9c0e180f25cd04888b9806a2b13a; ys=wprid.1497311335328038-10078803519147684862298681-vla1-1475; i=Wy4j7/NObv/KJhMuo5i6wR+aWAWq3hXfepakelBpdWN16ebCBruxQFcIaJEfcqGNVrVbN+I+gKbjbm7r4O9o4xgQ8CY=; yandex_gid=29640; zm=m-white_com.css-https"%"3Awww_y6AgvV8MErO8mSo_QSN4QJ0PBYs"%"3Al; pf=eyJmbGFzaCI6e319; pf.sig=WEkihpon3qfXt708UtZSzfT2k62TloAdz1jg6_iLs5Q" -H "Connection: keep-alive" -H "Upgrade-Insecure-Requests: 1" --data "track_id=d4898cd0b13a17faf65438e4d939e078cf&challenge=phone&answer="%"2B7+965+162-89-13"
+	
+	
+	curl "https://passport.yandex.ru/auth/challenges?track_id=4c896521bc61effdd39f8555959da407cf" -H "Host: passport.yandex.ru" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Content-Type: application/x-www-form-urlencoded" -H "Cookie: yandexuid=345037201497575748;" -H "Upgrade-Insecure-Requests: 1" --data "track_id=4c896521bc61effdd39f8555959da407cf&challenge=phone&answer=+7 965 302-75-05"
+	
+	

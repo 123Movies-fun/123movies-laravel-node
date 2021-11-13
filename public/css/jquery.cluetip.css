@@ -1,0 +1,47 @@
+div.ui-cluetip{font-size:1em;}
+.ui-cluetip-header,
+.ui-cluetip-content{padding:12px;}
+.ui-cluetip-header{font-size:1em;margin:0;overflow:hidden;}
+.cluetip-title .cluetip-close{float:right;position:relative;}
+.cluetip-close img{border:0;}
+#cluetip-waitimage{width:43px;height:11px;position:absolute;background-image:url(../images/wait.png);}
+.cluetip-arrows{display:none;position:absolute;top:6px !important;left:-11px;width:11px;height:22px;background-repeat:no-repeat;background-position:0 0;border-width:0;}
+.cluetip-extra{display:none;}
+.cluetip-default,
+.cluetip-default .cluetip-outer{background-color:#fff;}
+.cluetip-default .ui-cluetip-header{background-color:#fff;color:#79C142;font-size:16px;padding:10px 12px;}
+div.cluetip-default .cluetip-arrows{border-width:0;background:transparent none;}
+div.clue-right-default .cluetip-arrows{background-image:url(../images/arrow-left.png);}
+div.clue-left-default .cluetip-arrows{background-image:url(../images/arrow-right.png);left:100%;margin-right:-11px;}
+div.clue-top-default .cluetip-arrows{background-image:url(../images/darrowdown.png);top:100%;left:50%;margin-left:-11px;width:22px;height:11px;}
+div.clue-bottom-default .cluetip-arrows{background-image:url(../images/darrowup.png);top:-11px;left:50%;margin-left:-11px;width:22px;height:11px;}
+.cluetip-jtip{background-color:#fff;}
+.cluetip-jtip .cluetip-outer{border:2px solid #ccc;position:relative;}
+.cluetip-jtip .cluetip-inner{padding:5px;display:inline-block;}
+.cluetip-jtip div.cluetip-close{text-align:right;margin:0 5px 0;color:#900;}
+.cluetip-jtip .ui-cluetip-header{background-color:#ccc;padding:6px;}
+div.cluetip-jtip .cluetip-arrows{border-width:0;background:transparent none;}
+div.clue-right-jtip .cluetip-arrows{background-image:url(../images/arrow-left.png);}
+div.clue-left-jtip .cluetip-arrows{background-image:url(../images/arrow-right.png);left:100%;margin-right:-11px;}
+div.clue-top-jtip .cluetip-arrows{background-image:url(../images/arrowdown.png);top:100%;left:50%;width:22px;height:11px;margin-left:-11px;}
+div.clue-bottom-jtip .cluetip-arrows{background-image:url(../images/arrowup.png);top:-11px;left:50%;width:22px;height:11px;margin-left:-11px;}
+.cluetip-rounded{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;background-color:#fff;border:1px solid #ccc;}
+.cluetip-rounded .cluetip-outer{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;background-color:#fff;}
+.cluetip-rounded .cluetip-arrows{border-color:#ccc;}
+div.cluetip-rounded .cluetip-arrows{font-size:0;line-height:0%;width:0;height:0;border-style:solid;background:transparent none;}
+div.clue-right-rounded .cluetip-arrows{border-width:11px 11px 11px 0;border-top-color:transparent;border-bottom-color:transparent;border-left-color:transparent;}
+div.clue-left-rounded .cluetip-arrows{left:100%;margin-right:-11px;border-width:11px 0 11px 11px;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;}
+div.clue-top-rounded .cluetip-arrows{top:100%;left:50%;border-width:11px 11px 0 11px;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;}
+.clue-bottom-rounded .cluetip-arrows{top:-11px;left:50%;border-width:0 11px 11px 11px;border-top-color:transparent;border-right-color:transparent;border-left-color:transparent;}
+.cluetip-rounded .cluetip-title,
+.cluetip-rounded .cluetip-inner{zoom:1;}
+.jtip-top{padding:5px 12px;background:#eee;color:#333;font-weight:bold;margin:-12px -12px 12px -12px;font-size:12px;}
+.jtip-top .jt-info{display:inline-block;padding:3px 0;margin-right:20px;}
+.jtip-top .jt-info.jt-imdb{padding:1px 7px;background:#FED500;margin-right:15px;}
+.jtip-bottom{margin-top:15px}
+.jtip-bottom i{font-size:16px;}
+.jtip-bottom .btn-default{background:#eee;border:none;}
+.ui-cluetip-content{padding:12px;font-size:12px;}
+.ui-cluetip-content .f-desc{line-height:1.3em;}
+.jtip-quality{position:absolute;top:-27px;right:0px;line-height:1em;padding:3px 5px;font-size:10px;background:#333;color:#fff;text-transform:uppercase;font-family:"Montserrat";}
+h3.cluetip-title{margin-right:60px;}

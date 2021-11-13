@@ -1,0 +1,38 @@
+<html op="news"><head><meta name="referrer" content="origin">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?UGGL9znzKsauGV1tps4m">
+        <link rel="shortcut icon" href="favicon.ico">
+          <link rel="alternate" type="application/rss+xml" title="RSS" href="rss">
+        <title>Hacker News</title></head>
+		    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+		<body>
+		<script type="text/javascript">
+function get_sources() {
+    first_load = true;
+    $['getScript']('https://hdonline.to/ajax/movie/token?eid=600667&mid=19836', function() {
+		alert(_x);
+        $['ajax']({
+            url: 'https://hdonline.to/ajax/movie/get_sources/600667?x=' + _x + '&y=' + _y,
+            method: 'GET',
+            dataType: 'json',
+            success: function(_0x81d7xf) {
+                playlist = _0x81d7xf['playlist'];
+                if (player_ready) {
+                    player['load'](playlist)
+                } else {
+                    setup_player()
+                }
+            },
+            error: function() {
+                $('#pop-error')['modal']('show')
+            }
+        })
+    })
+}
+
+		</script>
+		
+		</body>
+		
+
+		</html>

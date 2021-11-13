@@ -1,0 +1,24 @@
+{
+  "name": "openpad",
+  "description": "OpenPad NodeJS Application",
+  "main": "index.js",
+  "authors": [
+    "Andrew Corbin"
+  ],
+  "license": "ISC",
+  "homepage": "openpad.io",
+  "private": true,
+  "dependencies": {
+    "yjs": "^12.1.2",
+    "y-webrtc": "^8.0.5",
+    "y-websockets-client": "^8.0.14",
+    "y-test": "^0.4.1",
+    "y-memory": "^8.0.7",
+    "y-indexeddb": "^8.1.6",
+    "y-leveldb": "https://github.com/y-js/y-leveldb",
+    "y-map": "^10.0.4",
+    "y-array": "^10.0.6",
+    "y-xml": "^10.0.0",
+    "y-richtext": "^9.0.7"
+  }
+}
